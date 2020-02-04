@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>float</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    #wrap {
+      border: 7px solid plum;
+    }
+    
+    #header {
+      height: 70px;
+      background-color: pink;
+    }
+    #container {
+      background-color: antiquewhite;
+      overflow: hidden;
+    }
+    #lnb {
+      float:left;
+      width:20%;
+      height:400px;
+      background-color: powderblue;
+    }
+    #contents {
+      float:left;
+      width:calc(80% - 50px);
+      height:400px;
+      background-color:blueviolet;
+      box-sizing: border-box;
+    }
+    #quick {
+      float:left;
+      width:50px;
+      height:400px;
+      background-color:papayawhip;
+    }
+    #footer {
+      height:70px;
+      background-color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header">헤더</header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div id="container">
+
+      <!-- lnb -->
+      <aside id="lnb">
+        LNB
+      </aside>
+      <!-- //lnb -->
+
+      <!-- contents -->
+      <section id="contents">
+        Contents..
+      </section>
+      <!-- //contents -->
+
+      <!--quick menu-->
+      <div id="quick">quick menu</div>
+      <!--//quick menu-->
+
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer id="footer">푸터</footer>
+    <!-- //footer -->
+
+  </divi>
+  <!-- //wrap -->
+</body>
+</html>

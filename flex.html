@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex</title>
+  <style>
+    #header, #footer {
+      background-color: thistle;
+      height:70px;
+    }
+    #container {
+      display:flex;
+      /* flex-direction:row;
+      flex-wrap:nowrap;
+      align-items: stretch; */
+      justify-content:space-between;
+    }
+    #lnb {
+      background-color:turquoise;
+      width: 100px;
+      height:400px;
+      /* 
+      order:2; */
+    }
+    #contents {
+      flex:1;
+      background-color: wheat;
+      height:400px;
+      /* width: 100px;
+      order:1; */
+    }
+    #quick {
+      width:50px;
+      height:400px;
+      background-color: palevioletred;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header">헤더</header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div id="container">
+
+      <!-- lnb -->
+      <aside id="lnb">
+        LNB
+      </aside>
+      <!-- //lnb -->
+
+      <!-- contents -->
+      <section id="contents">
+        Contents..
+      </section>
+      <!-- //contents -->
+      
+      <!--quick menu-->
+      <div id="quick">quick menu</div>
+      <!--//quick menu-->
+
+    </div>
+    <!-- //container -->
+
+
+
+    <!-- footer -->
+    <footer id="footer">푸터</footer>
+    <!-- //footer -->
+
+  </div>
+  <!-- //wrap -->
+</body>
+</html>

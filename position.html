@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position</title>
+  <style>
+    * {
+      margin: 0; 
+      padding:0;
+    }
+    #wrap {
+      border:7px solid plum;
+    }
+    #header{
+      position:fixed;
+      /* width:100%; */
+      top:0;
+      left:0;
+      right:0;
+      height:70px;
+      background-color:deeppink;
+      z-index: 2;
+    }
+    #container {
+      position:relative;
+      background-color:beige;
+      padding-top:63px;
+    }
+
+    #lnb {
+      background-color:aquamarine;
+      position: absolute;
+      top:63px;
+      left:0;
+      bottom:0;
+      width: 130px;
+      /* height:100%; */
+    }
+    #quick{
+      position: fixed;
+      top:100px;
+      right:0;
+      width:50px;
+      height:300px;
+      background-color:blueviolet;
+    }
+    #contents {
+      height: 1400px;
+      padding: 0 50px 0 500px;
+    }
+    #footer {
+      background-color:deeppink;
+      height:70px;
+    }
+  </style>
+</head>
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header">헤더</header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div id="container">
+
+      <!-- lnb -->
+      <aside id="lnb">
+        LNB
+      </aside>
+      <!-- //lnb -->
+
+      <!-- contents -->
+      <section id="contents">
+        Contents..hnkbkbkbkbkbk bkb kbkb kbbbbbbbb bbbbbb bbbbbbbbbbbbbb bbbb bbbbbbbbbbbbbbbbb bbbbbbbbb
+      </section>
+      <!-- //contents -->
+
+    </div>
+    <!-- //container -->
+    <!-- quick menu -->
+    <div id="quick">quick menu</div>
+    <!-- //quick menu -->
+    <!-- footer -->
+    <footer id="footer">푸터</footer>
+    <!-- //footer -->
+
+  </div>
+  <!-- //wrap -->
+</body>
+</html>
